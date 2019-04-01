@@ -1,0 +1,77 @@
+ body {
+     margin: 0;
+     padding: 0;
+     color: white;
+     font-weight: bold;
+ }
+
+ .navbar {
+     position: fixed;
+     z-index: 2;
+ }
+
+ .navContainer {
+     display: flex;
+     justify-content:space-between;
+     height: 100%;
+     width: 300px;
+     padding-left: 60px;
+ }
+
+ .navContainer div {
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .content00 {
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     top:0;
+     left: 0;
+      background: #fec56c;
+     height: 100%;
+ }
+ .fleche {
+     position: relative;
+     top: 40vh;
+     left: -25vw;
+     cursor: pointer;
+ }
+ .mainContainer {
+     height: 100vh;
+ }
+
+ .fixedEvolution {
+     position: fixed;
+     flex-direction: column;
+    top: 40px;
+     right: 40px;
+     height: 100%;
+     z-index: 15;
+
+
+ }
+
+ .fixedEvolution div {
+     cursor: pointer;
+     opacity: 0.4;
+     transition: 5s;
+ }
+
+ .fixedEvolution .active {
+     opacity: 1;
+     transition: 5s;
+
+ }
+
+ .loader {
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100vw;
+     background: white;
+     z-index: 16;
+ }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>le site</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jQuery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+
+		$(function () {
+             var scrollTop = $(window).scrollTop();
+			//
+			//
+			//
+			//
+			//
+            // $("body").scrollTop(function(){
+            //   if(scrollTop >= 620)
+			//   {
+            //       alert(scrollTop)
+			//   }
+            // });
+
+            $(window).on("scroll", function() {
+
+                var scrollHeight = $(document).height();
+                var scrollPosition = $(window).height() + $(window).scrollTop();
+
+
+
+                if(scrollPosition > 1240 && scrollPosition < 1885 )
+				{
+                    $('.active').removeClass('active')
+                    $(".item1").addClass('active')
+				}
+				elseif(scrollPosition > 1885)
+				{
+                    alert("dd")
+				}
+
+
+            });
+
+
+        })
+
+	</script>
+</head>
+
+
+<body>
+
+	<div class="loader">
+		<img src="asset/load.gif">
+		<img src="asset/clog.png" class="logo">
+	</div>
+
+	<nav class="navbar">
+		<div class="navContainer">
+			<div>EXPERIMENT</div>
+			<div>KNOW MORE</div>
+			<div>SHOP</div>
+		</div>
+	</nav>
+
+	<div class="mainContainer">
+
+		<div class="content00" id="content00">
+			<img src="asset/titre.jpg">
+			<a href="#content1"><img src="asset/fleche2.png" class="fleche"></a>
+		</div>
+		<div class="content" id="content1" ></div>
+		<div class="content" id="content2" ></div>
+		<div class="content" id="content3" ></div>
+		<div class="content" id="content4" ></div>
+		<div class="content" id="content5" ></div>
+		<div class="content" id="content6" ></div>
+		<div class="content" id="content7" ></div>
+		<div class="content" id="content8" ></div>
+		<div class="content" id="content9" ></div>
+		<div class="content" id="content10"></div>
+	</div>
+
+	<div class="fixedEvolution">
+		<a href="#content00"><div class="item00 active"><img src="asset/button.png"></div></a>
+		<a href="#content1"><div id="item1" class="item1"><img src="asset/button.png"></div></a>
+		<a href="#content2"><div class="item2"><img src="asset/button.png"></div></a>
+		<a href="#content3"><div class="item3"><img src="asset/button.png"></div></a>
+		<a href="#content4"><div class="item4"><img src="asset/button.png"></div></a>
+		<a href="#content5"><div class="item5"><img src="asset/button.png"></div></a>
+		<a href="#content6"><div class="item6"><img src="asset/button.png"></div></a>
+		<a href="#content7"><div class="item7"><img src="asset/button.png"></div></a>
+		<a href="#content8"><div class="item8"><img src="asset/button.png"></div></a>
+		<a href="#content9"><div class="item9"><img src="asset/button.png"></div></a>
+		<a href="#content10"><div class="item10"><img src="asset/button.png"></div></a>
+	</div>
+
+
+</body>
+</html>
